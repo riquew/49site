@@ -1,6 +1,8 @@
-/* body {
-    font-family: 'Roboto', sans-serif;
-} */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar {
     border-bottom: 3px solid #b72a04;
 }
@@ -28,7 +30,7 @@
 
 
 .numeros49 {
-    height: 80vh;
+    height: 85vh;
     min-height: 350px;
     background-color: #f6f7f8;
     display: flex;
@@ -52,9 +54,90 @@ footer {
     border-top: 3px solid #b72a04;
     display: flex;
     justify-content: center;
+    bottom: 0px;
+    width: 100%;
 }
 
 .icon {
     color: #f6f7f8;
     margin: 20px 20px;
 }
+
+.icon:hover {
+    color:#b72a04;
+}
+
+
+/* ATUAL CMT */
+.atualCmt {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 85vh;
+    padding: 20px;
+    width: 100%;
+}
+
+.fotoatualcmt {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.fotoatualcmt img {
+    border-radius: 5%;
+    width: 70%;
+    height: auto;
+}
+
+.curriculocmt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+}
+
+.curriculocmt h3 {
+    margin-bottom: 15px;
+}
+
+.curriculocmt li{
+    padding-right: 130px;
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+
+
+/* Galeria cmts */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    height: 85vh;
+    column-gap: 80px;
+    row-gap: 100px;
+  }
+
+.grid-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 10px solid #BA8C63;
+    border-image: linear-gradient(45deg, #BA8C63, #634828) 1;
+    font-size: 20px;
+}
+
+.placaCmt {
+    background-color: #DAA520;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    border: 2px solid #000;
+}
+
+
