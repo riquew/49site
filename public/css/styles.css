@@ -73,7 +73,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 85vh;
+    height: 100vh;
     padding: 20px;
     width: 100%;
 }

@@ -1,4 +1,22 @@
 import express from "express";
+import mongoose, { Schema } from 'mongoose';
+
+try {
+  await mongoose.connect('mongodb://localhost:27017/cmts49');
+} catch (error) {
+  console.log(error);
+}
+
+const cmts49 = new Schema({
+    nome: String,
+    anoInicio: Number,
+    anoSaida: Number
+});
+
+// const cmt = mongoose.model('cmt', cmts49);
+// const yasui = new cmt({nome: "Eduardo Yasui", anoInicio: 2020, anoSaida: 2021});
+// yasui.save(); 
+
 
 const app = express();
 
