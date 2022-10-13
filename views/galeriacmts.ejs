@@ -1,68 +1,13 @@
 <%- include("header") -%>
-<div class="grid-container">
+    
+<% for(key in listacmt) { %>
     <div class="grid-item">
         <img src="" alt="">
         <div class="placaCmt">
-            <h5>Nome coronel</h5>
-            <p>1998 - 1999</p>
+            <h5><%= listacmt[key].nome %></h5>
+            <p> <%= listacmt[key].anoInicio %> - <%= listacmt[key].anoSaida %></p>
         </div>
     </div>
-    <div class="grid-item">
-        <img src="" alt="">
-        <div class="placaCmt">
-            <h5>Nome coronel</h5>
-            <p>1998 - 1999</p>
-        </div>
-    </div>
-    <div class="grid-item">
-        <img src="" alt="">
-        <div class="placaCmt">
-            <h5>Nome coronel</h5>
-            <p>1998 - 1999</p>
-        </div>
-    </div>  
-    <div class="grid-item">
-        <img src="" alt="">
-        <div class="placaCmt">
-            <h5>Nome coronel</h5>
-            <p>1998 - 1999</p>
-        </div>
-    </div>
-    <div class="grid-item">
-        <img src="" alt="">
-        <div class="placaCmt">
-            <h5>Nome coronel</h5>
-            <p>1998 - 1999</p>
-        </div>
-    </div>
-    <div class="grid-item">
-        <img src="" alt="">
-        <div>
-            <h5></h5>
-            <p></p>
-        </div>
-    </div>  
-    <div class="grid-item">
-        <img src="" alt="">
-        <div>
-            <h5></h5>
-            <p></p>
-        </div>
-    </div>
-    <div class="grid-item">
-        <img src="" alt="">
-        <div>
-            <h5></h5>
-            <p></p>
-        </div>
-    </div>
-    <div class="grid-item">
-        <img src="" alt="">
-        <div>
-            <h5></h5>
-            <p></p>
-        </div>
-    </div>  
-  </div>
+<% } %>
 
 <%- include("footer") -%>
