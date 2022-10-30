@@ -90,6 +90,13 @@ footer {
     height: auto;
 }
 
+.quadradoSeparaTitulo {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background-color:#dd2b0b;
+}
+
 .curriculocmt {
     display: flex;
     flex-direction: column;
@@ -99,7 +106,10 @@ footer {
 }
 
 .curriculocmt h3 {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    position: relative;
+    bottom: 15px;
 }
 
 .curriculocmt li{
