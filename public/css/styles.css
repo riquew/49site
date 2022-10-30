@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
@@ -110,6 +111,7 @@ footer {
     padding-left: 8px;
     position: relative;
     bottom: 15px;
+    font-weight:600;
 }
 
 .curriculocmt li{
