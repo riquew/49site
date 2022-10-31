@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    background-color: #f6f7f8;
+    background-color: #f1f1f1;
 }
 
 .navbar {
@@ -99,30 +99,35 @@ footer {
     border-radius: 5px;
     width: 70%;
     height: auto;
+    box-shadow: 0 1px 3px 0 #a8a8a8;;
 }
 
 .quadradoSeparaTitulo {
     width: 15px;
     height: 15px;
     border-radius: 5px;
+    padding-left: 8px;
+    position: relative;
+    bottom: -15px;
     background-color:#dd2b0b;
 }
 
 .curriculocmt {
     display: flex;
     flex-direction: column;
+    background-color: #f6f7f8;;
     border: 1px solid #b4b4b4;
     border-radius: 5px;
-    box-shadow: 0 1px #888888;
-    padding: 10px;
+    box-shadow: 0 1px 3px 0 #a8a8a8;
+    padding: 50px;
 }
 
 
 .curriculocmt h3 {
-    padding-left: 8px;
-    position: relative;
-    bottom: 15px;
     font-weight:600;
+    z-index: 1;
+    padding-left: 8px;
+    margin-bottom: 0;
 }
 
 .curriculocmt li{
@@ -189,11 +194,18 @@ footer {
     .fotoatualcmt img {
         width: 100%;
     }
+
+    .quadradoSeparaTitulo {
+        margin-left: 15px;
+    }
     
     .curriculocmt h3 {
+        margin-left: 15px;
         position: relative;
-        bottom: 15px;
+        left: -22.5px;
+        top: 2px;
         font-weight:600;
+        width: 100%;
     }
 
     footer {
