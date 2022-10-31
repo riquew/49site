@@ -1,7 +1,13 @@
+html {
+    overflow-x:hidden;
+    height: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
+    background-color: #f6f7f8;
 }
 
 .navbar {
@@ -29,12 +35,9 @@ body {
     background-size: cover;
 }
 
-
-
 .numeros49 {
     height: 85vh;
     min-height: 350px;
-    background-color: #f6f7f8;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,11 +82,12 @@ footer {
 .atualCmt {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100vh;
     padding: 20px;
     width: 100%;
 }
+
 
 .fotoatualcmt {
     display: flex;
@@ -92,7 +96,7 @@ footer {
 }
 
 .fotoatualcmt img {
-    border-radius: 5%;
+    border-radius: 5px;
     width: 70%;
     height: auto;
 }
@@ -107,13 +111,14 @@ footer {
 .curriculocmt {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 50%;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+    box-shadow: 0 1px #888888;
+    padding: 10px;
 }
 
+
 .curriculocmt h3 {
-    margin-bottom: 5px;
     padding-left: 8px;
     position: relative;
     bottom: 15px;
@@ -121,7 +126,6 @@ footer {
 }
 
 .curriculocmt li{
-    padding-right: 130px;
     list-style-type: square;
     margin-bottom: 10px;
 }
@@ -135,7 +139,7 @@ footer {
     height: 85vh;
     column-gap: 80px;
     row-gap: 100px;
-  }
+}
 
 .grid-item {
     display: flex;
@@ -158,4 +162,44 @@ footer {
     border: 2px solid #000;
 }
 
+@media only screen and (max-width: 600px) {
+    .tituloNumeros {
+        width: 90%;
+    }
+
+    .todosNumeros {
+        flex-direction: column;
+        align-items: space-evenly;
+    }
+
+    .numerosCard {
+        margin-bottom: 20px;
+    }
+
+    .atualCmt {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .fotoatualcmt {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .fotoatualcmt img {
+        width: 100%;
+    }
+    
+    .curriculocmt h3 {
+        position: relative;
+        bottom: 15px;
+        font-weight:600;
+    }
+
+    footer {
+        bottom: 0;
+        position: relative; 
+    }
+
+}
 
