@@ -147,7 +147,7 @@ footer {
     padding-left: 8px;
     position: relative;
     bottom: -15px;
-    background-color:#dd2b0b;
+    background-color:hsl(0, 98%, 65%);
 }
 
 .curriculocmt {
@@ -260,7 +260,6 @@ footer {
     }
 
     .quadradoSeparaTitulo {
-        margin-left: 15px;
         display: none;
     }
     
