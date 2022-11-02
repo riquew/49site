@@ -82,6 +82,7 @@ footer {
     height: 100vh;
     display: flex;
     align-items: center;
+    padding: 15px;
 }
 
 .fotoCia {
@@ -101,6 +102,8 @@ footer {
 }
 
 .dadosCia hr {
+    flex-grow: 1;
+    width: 50%;
     color: #4e565f;
 }
 
@@ -227,6 +230,19 @@ footer {
 
     .numerosCard {
         margin-bottom: 20px;
+    }
+
+    .unidade {
+        flex-direction: column;
+    }
+
+    .fotoCia {
+        width: 100%;
+    }
+
+    .dadosCia {
+        width: 100%;
+        text-align: center;
     }
 
     .atualCmt {
