@@ -10,6 +10,10 @@ body {
     background-color: #f1f1f1;
 }
 
+.container-fluid {
+    margin: 0 30px;
+}
+
 .navbar {
     border-bottom: 3px solid #b72a04;
 }
@@ -20,9 +24,35 @@ body {
     align-items: center;
 }
 
+.navbar li {
+    margin: 0 10px;
+}
+
 .navbar-brand h2 {
     margin-left: 10px;
     font-weight: 600;
+}
+
+.servicosLink {
+    border: 1px solid #962000;
+    border-radius: 3px;
+    padding: 1px;
+    background: linear-gradient(to left, #212529 50%, #A80000 50%) right;
+    background-size: 200%;
+    transition: 0.35s ease-out;
+}
+
+.servicosLink:hover {
+    background-position: left;
+}
+
+.servicosLink .nav-link{
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(255, 255, 255);
 }
 
 .carousel-item {
@@ -63,14 +93,23 @@ footer {
     background-color: #212529;
     border-top: 3px solid #b72a04;
     display: flex;
-    justify-content: center;
-    bottom: 0px;
+    justify-content: flex-start;
+    bottom: 0;
     width: 100%;
+}
+
+footer .icons a {
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+footer .icons {
+    margin-right: 5%;
 }
 
 .icon {
     color: #f6f7f8;
-    margin: 20px 20px;
+    margin: 20px 10px;
 }
 
 .icon:hover {
@@ -219,6 +258,10 @@ footer {
 }
 
 @media only screen and (max-width: 1180px) {
+    .container-fluid {
+        margin: 0;
+    }
+
     .tituloNumeros {
         width: 90%;
     }
@@ -282,7 +325,8 @@ footer {
 
     footer {
         bottom: 0;
-        position: relative; 
+        position: relative;
+        justify-content: center;
     }
 
 }
