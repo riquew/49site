@@ -66,23 +66,42 @@ body {
 }
 
 .numeros49 {
-    height: 85vh;
+    height: 80vh;
     min-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 0 30px;
 }
 
 .todosNumeros {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
+}
+
+.numerosCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.numerosIcon {
+    width: 100px;
+    height: 100px;
+    padding: 15px 0;
+    filter: invert(10%) sepia(8%) saturate(1187%) hue-rotate(169deg) brightness(90%) contrast(87%);
+    opacity: 0.7;
 }
 
 .numeros49 h1, h3 {
     text-align: center;
     font-weight: 600;
+    padding: 10px 10px;
 }
 
 .numeros49 h5 {
@@ -185,7 +204,7 @@ footer .icons {
     border-radius: 5px;
     padding-left: 8px;
     position: relative;
-    bottom: -15px;
+    bottom: -25px;
     background-color:hsl(0, 98%, 65%);
 }
 
