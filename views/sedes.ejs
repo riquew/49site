@@ -1,0 +1,19 @@
+<%- include("header") -%>
+<div class="listaUnidades">
+    <% for(key in sedes) { %>
+        <div class="unidade">
+                <img src="/img/sede cias/<%= sedes[key].imagem %>" class="fotoCia">
+                <div class="dadosCia">
+                    <h1><%= sedes[key].titulo %></h1>
+                    <hr>
+                    <h4><%= sedes[key].endereco %></h4>
+                    <h4><%= sedes[key].telefone %></h4>
+                    <a href="<%= sedes[key].link %>" target="_blank">
+                        <i class="fa fa-map-marker-alt fa-2x"></i>
+                    </a>
+                </div>
+        </div>
+    <% } %>
+</div>
+
+<%- include("footer") -%>
