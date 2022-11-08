@@ -9,8 +9,9 @@ try {
 
 const cmts49 = new Schema({
     nome: String,
-    anoInicio: Number,
-    anoSaida: Number
+    anoInicio: String,
+    anoSaida: String,
+    imagem: String
 });
 
 const sedes = new Schema({
@@ -28,12 +29,6 @@ const cia2 = mongoose.model('cia2', sedes);
 const cia3 = mongoose.model('cia3', sedes);
 const ciaft = mongoose.model('ciaft', sedes);
 
-const yasui = new cmt({nome: "Eduardo Yasui", anoInicio: 2019, anoSaida: 2020});
-// yasui.save(); 
-const malco = new cmt({nome: "Malco Basilio", anoInicio: 2020, anoSaida:2021});
-// malco.save();
-const pauloHenrique = new cmt({nome: "Paulo Henrique Rosas", anoInicio: 2021, anoSaida: 2022});
-// pauloHenrique.save();
 
 const sedeBtl = new btl({
     imagem: "btl/btl.jpg",
@@ -167,6 +162,7 @@ app.get("/atualcmt", (req, res) => {
 
 app.get("/galeriacmts", async (req, res) => {
     let result = await cmt.find({});
+    console.log(result)
     res.render("galeriacmts", {listacmt: result})
 });
 

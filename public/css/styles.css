@@ -114,32 +114,6 @@ body {
     text-align: center;
 }
 
-footer {
-    background-color: #212529;
-    border-top: 3px solid #b72a04;
-    display: flex;
-    justify-content: flex-start;
-    bottom: 0;
-    width: 100%;
-}
-
-footer .icons a {
-    text-decoration: none;
-    margin-left: 30px;
-}
-
-footer .icons {
-    margin-right: 5%;
-}
-
-.icon {
-    color: #f6f7f8;
-    margin: 20px 10px;
-}
-
-.icon:hover {
-    color:#b72a04;
-}
 
 /*Sub Unidades*/
 .listaUnidades {
@@ -246,11 +220,11 @@ footer .icons {
 /* Galeria cmts */
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     padding: 10px;
-    height: 85vh;
     column-gap: 80px;
     row-gap: 100px;
+    margin: 20px 30px;
 }
 
 .grid-item {
@@ -264,14 +238,24 @@ footer .icons {
     font-size: 20px;
 }
 
+.grid-item img {
+    width: 100%;
+    max-height: 400px;
+}
+
 .placaCmt {
-    background-color: #DAA520;
+    background-color: #dbdada;
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
     border: 2px solid #000;
+}
+
+.placaCmt p {
+    margin: 5px;
+    font-weight: 600;
 }
 
 /*SERVICOS */
@@ -288,6 +272,57 @@ footer .icons {
     width: 50%;
 }
 
+footer {
+    background-color: #212529;
+    border-top: 3px solid #b72a04;
+    display: flex;
+    justify-content: flex-start;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .icons a {
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+footer .icons {
+    margin-right: 5%;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #A80000;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 3px 3px 0 #646464;
+}
+  
+#myBtn:hover {
+    background-color: hsl(0, 75%, 46%);
+  }
+
+.icon {
+    color: #f6f7f8;
+    margin: 20px 10px;
+}
+
+.icon:hover {
+    color:#b72a04;
+}
+
+
 @media only screen and (max-width: 1180px) {
     .container-fluid {
         margin: 0;
@@ -297,7 +332,15 @@ footer .icons {
         width: 90%;
     }
 
+    .numeros49 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+    }
+
     .todosNumeros {
+        display: flex;
         flex-direction: column;
         align-items: space-evenly;
     }
@@ -353,6 +396,22 @@ footer .icons {
         margin: 50px 0;
         width: 100%;
     }    
+
+    .grid-container {
+        grid-template-columns: auto;
+        height: 100%;
+        column-gap: 0;
+    }
+
+    .placaCmt {
+        width: 80%;
+    }
+
+    .placaCmt p {
+        font-size: 14px;
+        margin: 5px;
+        font-weight: 600;
+    }
 
     footer {
         bottom: 0;

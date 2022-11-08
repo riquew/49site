@@ -1,13 +1,15 @@
 <%- include("header") -%>
-    
-<% for(key in listacmt) { %>
-    <div class="grid-item">
-        <img src="" alt="">
-        <div class="placaCmt">
-            <h5><%= listacmt[key].nome %></h5>
-            <p> <%= listacmt[key].anoInicio %> - <%= listacmt[key].anoSaida %></p>
+<div class="grid-container">
+    <% for(key in listacmt) { %>
+        <div class="grid-item">
+            <img src="/img/cmts/galeriacmts/<%= listacmt[key].imagem %>">
+            <div class="placaCmt">
+                <p>Tenente Coronel PM</p>
+                <p><%= listacmt[key].nome %></p>
+                <p> <%= listacmt[key].anoInicio %> - <%= listacmt[key].anoSaida %></p>
+            </div>
         </div>
-    </div>
-<% } %>
+    <% } %>
+</div>
 
 <%- include("footer") -%>
