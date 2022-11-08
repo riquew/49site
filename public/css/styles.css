@@ -119,10 +119,11 @@ body {
 .listaUnidades {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .unidade{
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     padding: 15px;
@@ -132,9 +133,8 @@ body {
     width: 50%;
     margin: 30px 30px;
     border-radius: 5px;
-    height: auto;
     box-shadow: 0 1px 3px 0 #a8a8a8;
-    max-height: 500px;
+    height: 500px;
 }
 
 .dadosCia {
@@ -143,6 +143,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f6f7f8;;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 #a8a8a8;
+    padding: 140px 0;
+    margin-right: 30px;
 }
 
 .dadosCia hr {
@@ -180,7 +185,7 @@ body {
 .fotoatualcmt img {
     border-radius: 5px;
     width: 70%;
-    height: auto;
+    max-height: auto;
     box-shadow: 0 1px 3px 0 #a8a8a8;;
 }
 
@@ -351,15 +356,19 @@ footer .icons {
 
     .unidade {
         flex-direction: column;
+        height: auto;
     }
 
     .fotoCia {
         width: 100%;
+        height: auto;
     }
 
     .dadosCia {
         width: 100%;
+        padding: 50px;
         text-align: center;
+        margin-right: 0;
     }
 
     .atualCmt {

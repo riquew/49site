@@ -162,7 +162,6 @@ app.get("/atualcmt", (req, res) => {
 
 app.get("/galeriacmts", async (req, res) => {
     let result = await cmt.find({});
-    console.log(result)
     res.render("galeriacmts", {listacmt: result})
 });
 
